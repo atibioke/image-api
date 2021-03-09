@@ -30,7 +30,7 @@ class Home extends React.Component {
         this.setState({
             search,
         })
-        const url = `https://api-prod.autochek.africa/v1/inventory/car/search?country=${this.state.country}&query=${search}`
+        const url = ''
         axios
             .get(url)
             .then(res => {
@@ -50,7 +50,7 @@ class Home extends React.Component {
             pageNumber: selected,
             laoded: false,
         })
-        const url = `https://api-prod.autochek.africa/v1/inventory/car/search?pageNumber=${this.state.pageNumber}`
+        const url = ''
         axios
             .get(url)
             .then(res => {
@@ -70,7 +70,7 @@ class Home extends React.Component {
             loaded: false,
             country
         })
-        const url = `https://api-prod.autochek.africa/v1/inventory/car/search?country=${country}`
+        const url = ''
         axios
             .get(url)
             .then(res => {
@@ -86,7 +86,7 @@ class Home extends React.Component {
 
 
     componentDidMount() {
-        const url = "https://api-prod.autochek.africa/v1/inventory/car/search"
+        const url = ""
 
         axios.get(url)
             .then(res => {

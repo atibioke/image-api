@@ -19,14 +19,14 @@ class CarDisplay extends React.Component {
 
     componentDidMount() {
         const id = this.props.match.params.id;
-        const url = `http://api-prod.autochek.africa/v1/inventory/car/${id}`
+        const url = ''
         axios.get(url)
             .then(res => {
                 const data = res.data;
                 this.setState({
                     data
                 }, ()=>{
-                    console.log(this.state.data.country, '09089')
+                  
                 })
             })
     }
